@@ -1,9 +1,12 @@
-import './App.css';
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
-    <div>
-      <h1>Test</h1>
+    <div className="bg-yellow-50">
+      <Navbar />
+      <Hero />
     </div>
   );
 }
