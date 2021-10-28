@@ -1,49 +1,73 @@
 import React from "react";
+import Hero from "./Hero";
+import HeroListItem from "./HeroListItem";
+import { motion } from "framer-motion";
 
 const HeroList = () => {
+  // Animation for list variants
+  const boxVariants = {
+    out: {
+      y: 600,
+    },
+    in: {
+      y: 0,
+      transition: {
+        duration: 0.6,
+        // The first child will appear AFTER the parent has appeared on the screen
+        delayChildren: 0.5,
+        // The next sibling will appear 0.3s after the previous one
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const iconVariants = {
+    out: {
+      x: 1000,
+    },
+    in: {
+      x: 0,
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 80,
+      }
+    },
+  };
+
   return (
-    <ul className="flex justify-between">
-      <li className="pr-8">
-        <a href="https://www.mongodb.com/">
-          <button class=" hover:bg-green-600 py-2 px-4 rounded-full">
-            <img
-              className="object-scale-down h-12 w-full"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-            />
-          </button>
-        </a>
-      </li>
-      <li className="pr-8">
-        <a href="https://expressjs.com/">
-          <button class=" hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-full">
-            <img
-              className="object-scale-down h-12 w-full"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-            />
-          </button>
-        </a>
-      </li>
-      <li className="pr-8">
-        <a href="https://reactjs.org/">
-          <button class=" hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-            <img
-              className="object-scale-down h-12 w-full"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            />
-          </button>
-        </a>
-      </li>
-      <li className="pr-8">
-        <a href="https://nodejs.org/en/">
-          <button class=" hover:bg-green-800 text-white font-bold py-2 px-4 rounded-full">
-            <img
-              className="object-scale-down h-12 w-full"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            />
-          </button>
-        </a>
-      </li>
-    </ul>
+    <motion.div variants={boxVariants} initial="out" animate="in">
+      <ul className="flex justify-between">
+        <motion.div variants={iconVariants}>
+          <HeroListItem
+            link="https://www.mongodb.com/"
+            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            onHover="hover:bg-green-600"
+          />
+        </motion.div>
+        <motion.div variants={iconVariants}>
+          <HeroListItem
+            link="https://expressjs.com/"
+            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            onHover="hover:bg-gray-600"
+          />
+        </motion.div>
+        <motion.div variants={iconVariants}>
+          <HeroListItem
+            link="https://reactjs.org/"
+            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            onHover="hover:bg-blue-700"
+          />
+        </motion.div>
+        <motion.div variants={iconVariants}>
+          <HeroListItem
+            link="https://nodejs.org/en/"
+            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            onHover="hover:bg-green-800"
+          />
+        </motion.div>
+      </ul>
+    </motion.div>
   );
 };
 
