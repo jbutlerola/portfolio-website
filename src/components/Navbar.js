@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav
-      className="flex justify-between items-center h-16 bg-transparent text-black shadow-sm font-mono sticky top-0"
+      className="flex justify-between items-center h-16 bg-transparent text-black font-mono sticky top-0"
       role="navigation"
     >
       <Link to="/" className="pl-8">
@@ -28,16 +28,7 @@ const Navbar = () => {
       </div>
       <div className="pr-8 md:block hidden">
         <Link className="p-4" to="/">
-          Home
-        </Link>
-        <Link className="p-4" to="/">
           Menu
-        </Link>
-        <Link className="p-4" to="/">
-          About
-        </Link>
-        <Link className="p-4" to="/">
-          Contact
         </Link>
       </div>
     </nav>

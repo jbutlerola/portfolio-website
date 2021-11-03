@@ -7,7 +7,11 @@ function App() {
     <div className="bg-yellow-50">
       <Navbar />
       <Hero />
-      <Card />
+      <Card
+        title="Keeper"
+        description="A simple Google Keep clone made with React and Material-ui"
+        url="https://github.com/jbutlerola/keeper-app"
+      />
     </div>
   );
 }
