@@ -4,8 +4,8 @@ const Card = (props) => {
   return (
     // Card for portfolio projects
     //TODO: implement props for text and image, fix sizing and responsive sizing
-    <div className="px-8 md:px-48 lg:px-64">
-      <div className="p-6 md:px-12 lg:px-16 object-scale-down bg-gray-100 rounded-xl shadow-lg">
+    <div className="px-8 md:px-48 lg:px-64 text-fuscous-gray-700">
+      <div className="p-6 md:px-12 lg:px-16 object-scale-down bg-zorba-100 rounded-xl shadow-lg">
         <h1 className="font-bold text-2xl mb-3 text-center">{props.title}</h1>
         <a href={props.url} target="_blank">
           <img
@@ -15,13 +15,13 @@ const Card = (props) => {
           />
         </a>
         <div className="px-6 pt-4 pb-2">
-          <p className="text-gray-700 text-base">{props.description}</p>
+          <p className="text-base">{props.description}</p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">
             React
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">
             Material-ui
           </span>
         </div>

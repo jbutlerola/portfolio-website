@@ -17,7 +17,7 @@ library.add(fab, faEnvelope, faPhone)
 
 function App() {
   return (
-    <div className="bg-yellow-50">
+    <div className="bg-harvest-gold-100">
       <Navbar />
       <Hero />
       <Card
