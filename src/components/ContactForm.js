@@ -8,9 +8,8 @@ const ContactForm = () => {
         <div className="flex flex-col space-y-8 justify-between">
           <div>
             <h1 className="font-bold text-4xl tacking-wide">Contact Me</h1>
-            <p className="pt-2 text-gray-600 text-sm">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Sapiente, voluptatum.
+            <p className="pt-2 text-fuscous-gray-700 text-sm">
+              Feel free to contact me about job openings, questions, or any other inquiries
             </p>
           </div>
           <div className="flex flex-col space-y-4">
@@ -23,18 +22,18 @@ const ContactForm = () => {
               <span>(360) 620 3526</span>
             </div>
           </div>
-          <div className="flex space-x-4 text-xl">
-            <a>
+          <div className="flex space-x-4 text-2xl">
+            <a href="https://github.com/jbutlerola" target="_blank">
               <FontAwesomeIcon icon={["fab", "github"]} />
             </a>
-            <a>
+            <a href="https://www.linkedin.com/in/jack-butler-9a89a5224/" target="_blank">
               <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </a>
           </div>
         </div>
         {/* Form section*/}
         <div className="relative">
-          <div className="bg-zorba-200 rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+          <div className="bg-zorba-200 rounded-xl shadow-lg p-8 text-fuscous-gray-600 md:w-80">
             <form action="" className="flex flex-col space-y-4">
               <div>
                 <label htmlFor="name" className="text-sm">
@@ -44,7 +43,7 @@ const ContactForm = () => {
                   name="name"
                   type="text"
                   placeholder="Your Name"
-                  className="ring-1 ring-gray-300 w-full mt-2 rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-gray-600"
+                  className="ring-1 ring-fuscous-gray-300 w-full mt-2 rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-fuscous-gray-700"
                 />
               </div>
               <div>
@@ -55,7 +54,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   placeholder="Email"
-                  className="ring-1 ring-gray-300 w-full mt-2 rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-gray-600"
+                  className="ring-1 ring-fuscous-gray-300 w-full mt-2 rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-fuscous-gray-700"
                 />
               </div>
               <div>
@@ -67,10 +66,10 @@ const ContactForm = () => {
                   type="textarea"
                   rows="4"
                   placeholder="Message"
-                  className="ring-1 ring-gray-300 w-full mt-2 rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-gray-600"
+                  className="ring-1 ring-fuscous-gray-300 w-full mt-2 rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-fuscous-gray-700"
                 ></textarea>
               </div>
-              <button className="inline-block self-end bg-gray-50 text-gray-800 font-bold rounded-xl px-6 py-2 uppercase text-sm hover:bg-gray-300">Send message</button>
+              <button className="inline-block self-end bg-fuscous-gray-200 text-fuscous-gray-800 font-bold rounded-xl px-6 py-2 uppercase text-sm hover:bg-fuscous-gray-300">Send message</button>
             </form>
           </div>
         </div>

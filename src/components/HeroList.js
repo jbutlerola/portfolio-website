@@ -40,29 +40,25 @@ const HeroList = () => {
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://www.mongodb.com/"
-            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-            onHover="hover:bg-green-600"
+            logo="envira"
           />
         </motion.div>
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://expressjs.com/"
-            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-            onHover="hover:bg-gray-600"
+            logo="js"
           />
         </motion.div>
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://reactjs.org/"
-            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            onHover="hover:bg-blue-700"
+            logo="react"
           />
         </motion.div>
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://nodejs.org/en/"
-            imgSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            onHover="hover:bg-green-800"
+            logo="node-js"
           />
         </motion.div>
       </ul>
