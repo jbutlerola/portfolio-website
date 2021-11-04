@@ -4,14 +4,14 @@ const Card = (props) => {
   return (
     // Card for portfolio projects
     //TODO: implement props for text and image, fix sizing and responsive sizing
-    <div className=" px-16 md:px-48 lg:px-64 ">
-      <div className="p-16 object-scale-down bg-gray-100 rounded-lg">
+    <div className="px-8 md:px-48 lg:px-64">
+      <div className="p-6 md:px-12 lg:px-16 object-scale-down bg-gray-100 rounded-xl shadow-lg">
         <h1 className="font-bold text-2xl mb-3 text-center">{props.title}</h1>
         <a href={props.url} target="_blank">
           <img
             src="../images/keeper-site.png"
             alt="Google Keep cloned website"
-            className="rounded-lg h-auto"
+            className="rounded-xl h-auto"
           />
         </a>
         <div className="px-6 pt-4 pb-2">

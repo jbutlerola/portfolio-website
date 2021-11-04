@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "./Hero";
 import HeroListItem from "./HeroListItem";
 import { motion } from "framer-motion";
 
