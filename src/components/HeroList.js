@@ -36,7 +36,7 @@ const HeroList = () => {
 
   return (
     <motion.div variants={boxVariants} initial="out" animate="in">
-      <ul className="flex justify-between">
+      <ul className="flex justify-between pt-6">
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://www.mongodb.com/"

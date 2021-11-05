@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactForm = () => {
   return (
-    <div className="flex w-full justify-center items-center pt-64 px-8 md:px-48 lg:px-6">
+    <div id="contact" className="flex w-full justify-center items-center pb-12 pt-64 px-8 md:px-48 lg:px-6">
       <div className="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 bg-zorba-100 w-full max-w-4xl sm:p-12 p-8 rounded-xl shadow-lg text-black">
         <div className="flex flex-col space-y-8 justify-between">
           <div>
             <h1 className="font-bold text-4xl tacking-wide">Contact Me</h1>
-            <p className="pt-2 text-fuscous-gray-700 text-sm">
-              Feel free to contact me about job openings, questions, or any other inquiries
+            <p className="pt-3 text-fuscous-gray-700 text-sm">
+              Feel free to contact me about job openings, questions about the website, or any other inquiries
             </p>
           </div>
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-8">
             <div className="inline-flex space-x-2 items-center">
               <FontAwesomeIcon className="text-xl" icon="envelope" />
               <span>jackbutlerola@gmail.com</span>
