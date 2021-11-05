@@ -11,6 +11,8 @@ library.add(fab, faEnvelope, faPhone, faEnvira, faBars)
 // fix navbar popout, add animations
 // add animating down arrow, scroll down to project section
 // put technologies in seperate file and map onto card
+// make hero list item larger on hover, change color?
+
 
 function App() {
   return (

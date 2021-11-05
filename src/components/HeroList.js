@@ -22,7 +22,7 @@ const HeroList = () => {
 
   const iconVariants = {
     out: {
-      x: 1000,
+      x: 2000,
     },
     in: {
       x: 0,
