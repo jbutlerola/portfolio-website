@@ -63,6 +63,18 @@ module.exports = {
         800: "#83807e",
         900: "#6b6867",
       },
+      react: {
+        DEFAULT: "#61DAFB"
+      },
+      nodejs: {
+        DEFAULT: "#67A063"
+      },
+      mongodb: {
+        DEFAULT: "#54B542"
+      },
+      javascript: {
+        DEFAULT: "#F0DB4F"
+      }
     },
     extend: {},
   },
