@@ -9,7 +9,7 @@ const Navbar = () => {
       role="navigation"
     >
       <Link
-        className="pl-8"
+        className="pl-8 cursor-pointer"
         to="about"
         spy={true}
         smooth={true}
@@ -22,9 +22,8 @@ const Navbar = () => {
       </div>
       <div className="pr-8 md:block hidden">
         <Link
-          className="p-4"
+          className="p-4 cursor-pointer"
           to="about"
-          activeClass="border-b"
           spy={true}
           offset={-40}
           smooth={true}
@@ -33,9 +32,8 @@ const Navbar = () => {
           About
         </Link>
         <Link
-          className="p-4"
+          className="p-4 cursor-pointer"
           to="portfolio-projects"
-          activeClass="border-b"
           spy={true}
           smooth={true}
           offset={-10}
@@ -44,9 +42,8 @@ const Navbar = () => {
           Projects
         </Link>
         <Link
-          className="p-4"
+          className="p-4 cursor-pointer"
           to="contact"
-          activeClass="border-b"
           spy={true}
           offset={200}
           smooth={true}

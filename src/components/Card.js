@@ -1,6 +1,5 @@
 import React from "react";
-import CardTech from "./CardTech";
-import { Element } from "react-scroll";
+import CardTechs from "./CardTechs";
 
 const Card = (props) => {
   return (
@@ -26,8 +25,7 @@ const Card = (props) => {
           <p className="text-base">{props.description}</p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <CardTech technology="React" />
-          <CardTech technology="Material-ui" />
+          <CardTechs cardTechnologies={props.cardTechnologies} />
         </div>
       </div>
     </div>
