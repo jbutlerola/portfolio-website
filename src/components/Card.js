@@ -4,7 +4,6 @@ import CardTechs from "./CardTechs";
 const Card = (props) => {
   return (
     // Card for portfolio projects
-    //TODO: implement props for text and image, fix sizing and responsive sizing
 
     <div
       id="portfolio-projects"
@@ -14,7 +13,7 @@ const Card = (props) => {
         <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl tacking-wide text-center p-4">
           {props.title}
         </h1>
-        <a href={props.url} target="_blank">
+        <a href={props.url} target="_blank" rel="noreferrer">
           <img
             src={props.img}
             alt={props.imgAlt}

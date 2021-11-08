@@ -1,16 +1,16 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
-import ContactForm from "./components/ContactForm";
+import Contact from "./components/Contact";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faEnvira } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Footer from './components/Footer';
 
 library.add(fab, faEnvelope, faPhone, faEnvira, faBars);
 //TODO:
 // fix navbar popout, add animations
 // add animating down arrow, scroll down to project section
-// put technologies in seperate file and map onto card
 
 const App = () => {
   return (
@@ -35,7 +35,8 @@ const App = () => {
           cardTechnologies={['React', 'TailwindCSS']}
         />
       </div>
-      <ContactForm />
+      <Contact />
+      <Footer />
     </div>
   );
 };
