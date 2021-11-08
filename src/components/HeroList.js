@@ -41,28 +41,28 @@ const HeroList = () => {
           <HeroListItem
             link="https://www.mongodb.com/"
             logo="envira"
-            techColor="mongodb"
+            techColor="hover:text-mongodb"
           />
         </motion.div>
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://expressjs.com/"
             logo="js"
-            techColor="javascript"
+            techColor="hover:text-javascript"
           />
         </motion.div>
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://reactjs.org/"
             logo="react"
-            techColor="react"
+            techColor="hover:text-react"
           />
         </motion.div>
         <motion.div variants={iconVariants}>
           <HeroListItem
             link="https://nodejs.org/en/"
             logo="node-js"
-            techColor="nodejs"
+            techColor="hover:text-nodejs"
           />
         </motion.div>
       </ul>
