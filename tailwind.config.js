@@ -1,5 +1,13 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: {
+    content:["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    safelist: [
+      'hover:text-react',
+      'hover:text-nodejs',
+      'hover:text-mongodb',
+      'hover:text-javascript'
+    ]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
