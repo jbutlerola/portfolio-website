@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <nav
       className="flex justify-between items-center h-16 bg-transparent text-black font-mono sticky top-0"
@@ -17,7 +17,7 @@ const Navbar = () => {
       >
         Jack Butler
       </Link>
-      <div className="px-4 cursor-pointer md:hidden">
+      <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <FontAwesomeIcon icon="bars" />
       </div>
       <div className="pr-8 md:block hidden">

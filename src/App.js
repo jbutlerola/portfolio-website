@@ -6,6 +6,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faEnvira } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Footer from './components/Footer';
+import Dropdown from "./components/Dropdown";
+import { useState, useEffect } from "react";
 
 library.add(fab, faEnvelope, faPhone, faEnvira, faBars);
 //TODO:
@@ -13,9 +15,27 @@ library.add(fab, faEnvelope, faPhone, faEnvira, faBars);
 // add animating down arrow, scroll down to project section
 
 const App = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    const hideMenu = () => {
+      if(window.innerWidth > 768 && isOpen) {
+        setIsOpen(false);
+      }
+    }
+
+    window.addEventListener('resize', hideMenu)
+
+    return () => window.removeEventListener('resize', hideMenu);
+  })
+
   return (
     <div className="bg-harvest-gold-100">
-      <Navbar />
+      <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} />
       <Hero />
       <div id="portfoio-projects">
         <Card
