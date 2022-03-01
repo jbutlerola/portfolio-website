@@ -38,6 +38,14 @@ const App = () => {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Hero />
       <div id="portfoio-projects">
+      <Card
+          title="advice-generator"
+          description="A random advice generator using the Advice Slip Api"
+          url="https://jbutlerola-advice-generator.netlify.app/"
+          img="../images/advice-generator.png"
+          imgAlt="Advice generator website"
+          cardTechnologies={['React']}
+        />
         <Card
           title="Keeper"
           description="A simple Google Keep clone made with React and Material-ui"
