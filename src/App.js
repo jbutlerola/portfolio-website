@@ -37,14 +37,30 @@ const App = () => {
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Hero />
-      <div id="portfoio-projects">
+      <div id="portfolio-projects">
+      <Card
+          title="URL-shortener"
+          description="A Url shortening website that integrates shrtcode API"
+          url="https://url-shortener-jbutlerola.netlify.app/"
+          img="../images/url-shortener.png"
+          imgAlt="Url shortener website"
+          cardTechnologies={['React', 'TailwindCSS', 'JavaScript']}
+        />
+      <Card
+          title="expenses-chart-component"
+          description="A chart component that can be used to track spending over a week. The chart is dynamically updated."
+          url="https://expenses-chart-component-jbutlerola.netlify.app/"
+          img="../images/expenses-chart-component.png"
+          imgAlt="expenses chart component"
+          cardTechnologies={['React', 'TailwindCSS', 'JavaScript', 'ChartJS']}
+        />
       <Card
           title="advice-generator"
           description="A random advice generator using the Advice Slip Api"
           url="https://jbutlerola-advice-generator.netlify.app/"
           img="../images/advice-generator.png"
           imgAlt="Advice generator website"
-          cardTechnologies={['React']}
+          cardTechnologies={['React', 'TailwindCSS']}
         />
         <Card
           title="Keeper"

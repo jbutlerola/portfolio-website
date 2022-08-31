@@ -17,7 +17,7 @@ const Card = (props) => {
           <img
             src={props.img}
             alt={props.imgAlt}
-            className="rounded-xl h-auto"
+            className="rounded-xl h-auto overflow-hidden"
           />
         </a>
         <div className="px-6 pt-4 pb-2">
